@@ -2,7 +2,7 @@ from django.http.response import HttpResponse
 from django.shortcuts import render, HttpResponse
 
 def homepage(request):
-    return HttpResponse("Добро пожаловать в приложение ToDo-Admin")
+    return render(request, "index.html")
 
 def test(request):
     return render(request,"test.html")
